@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=100 lang=cpp
+ * @lc app=leetcode id=101 lang=cpp
  *
- * [100] Same Tree
+ * [101] Symmetric Tree
  */
 
 // @lc code=start
@@ -18,16 +18,20 @@
  */
 class Solution {
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) {
-         if (p == nullptr && q == nullptr) {
+    bool check(TreeNode *p, TreeNode *q) {
+        if (p == nullptr && q == nullptr) {
             return true;
         } else if (p == nullptr || q == nullptr) {
             return false;
         } else if (p->val != q->val) {
             return false;
         } else {
-            return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+            return check(p->left, q->right) && check(p->right, q->left);
         }
+    }
+    
+    bool isSymmetric(TreeNode* root) {
+        return check(root, root);
     }
 };
 // @lc code=end

@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=100 lang=cpp
+ * @lc app=leetcode id=104 lang=cpp
  *
- * [100] Same Tree
+ * [104] Maximum Depth of Binary Tree
  */
 
 // @lc code=start
@@ -18,16 +18,8 @@
  */
 class Solution {
 public:
-    bool isSameTree(TreeNode* p, TreeNode* q) {
-         if (p == nullptr && q == nullptr) {
-            return true;
-        } else if (p == nullptr || q == nullptr) {
-            return false;
-        } else if (p->val != q->val) {
-            return false;
-        } else {
-            return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
-        }
+    int maxDepth(TreeNode* root) {
+        
     }
 };
 // @lc code=end
