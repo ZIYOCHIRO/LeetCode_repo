@@ -35,22 +35,21 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    int maxDepth(TreeNode* root) {
-        int res;
-        stack<TreeNode*>stk;
-        while (root != nullptr || !stk.empty()) {
-            while (root != nullptr) {
-                stk.push(root);
-                res = max(res, stk.size());
-            }
-            
+    int minDepth(TreeNode* root) {
+        if (root == nullptr) {
+            return 0;
         }
-        return res;
+        
+        if (root->left == nullptr || root->right == nullptr) {
+            return 1;
+        }
+        
+        return 1;
     }
+    
 };
+
 // @lc code=end
-
-
 
 
 int main() {

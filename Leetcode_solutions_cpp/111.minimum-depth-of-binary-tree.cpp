@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=104 lang=cpp
+ * @lc app=leetcode id=111 lang=cpp
  *
- * [104] Maximum Depth of Binary Tree
+ * [111] Minimum Depth of Binary Tree
  */
 
 // @lc code=start
@@ -18,9 +18,8 @@
  */
 class Solution {
 public:
-    int maxDepth(TreeNode* root) {
-        if (root == nullptr) return 0;
-        return max(maxDepth(root->left), maxDepth(root->right))+1;
+    int minDepth(TreeNode* root) {
+        
     }
 };
 // @lc code=end
