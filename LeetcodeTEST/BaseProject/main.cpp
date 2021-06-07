@@ -32,24 +32,21 @@ void printVector(vector<int>& v)
     cout << "} " << endl;
 }
 
-
+//前序遍历：按照访问根节点——左子树——右子树的方式遍历这棵树，而在访问左子树或者右子树的时候，我们按照同样的方式遍历，直到遍历完整棵树
+//中序遍历：按照访问左子树——根节点——右子树的方式遍历这棵树，而在访问左子树或者右子树的时候我们按照同样的方式遍历
+//后序遍历：按照访问左子树——右子树——根节点的方式遍历这棵树，而在访问左子树或者右子树的时候，我们按照同样的方式遍历，直到遍历完整棵树。
 // @lc code=start
 class Solution {
 public:
-    vector<int> preorderTraversal(TreeNode* root) {
-        
-        
-        
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
         
     }
-    
 };
-
 // @lc code=end
 
 
 int main() {
-    Solution solution;
+    //Solution solution;
     
     return 0;
 }
