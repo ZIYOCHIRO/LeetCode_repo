@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <stack>
+#include <unordered_set>
 using namespace std;
 
 struct ListNode {
@@ -35,15 +36,11 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    bool isPalindrome(string s) {
-        string pStr;
-        for (char c:s) {
-            if (isalnum(c)) {
-                pStr += tolower(c);
-            }
-        }
-        string pStr_rev(pStr.rbegin(), pStr.rend());
-        return pStr == pStr_rev;
+    vector<int> preorderTraversal(TreeNode* root) {
+        
+        
+        
+        
     }
     
 };
