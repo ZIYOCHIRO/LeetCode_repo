@@ -35,16 +35,15 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    vector<vector<int>> generate(int numRows) {
-        vector<vector<int>> ret(numRows);
-        for (int i = 0; i < numRows ; i++) {
-            ret[i].resize(i+1);
-            ret[i][0] = ret[i][i] = 1;
-            for (int j = 1; j < i; j++) {
-                ret[i][j] = ret[i-1][j-1] + ret[i-1][j];
+    bool isPalindrome(string s) {
+        string pStr;
+        for (char c:s) {
+            if (isalnum(c)) {
+                pStr += tolower(c);
             }
         }
-        return ret;
+        string pStr_rev(pStr.rbegin(), pStr.rend());
+        return pStr == pStr_rev;
     }
     
 };
