@@ -38,15 +38,22 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        
+    int titleToNumber(string columnTitle) {
+        long long res=0;
+        reverse(columnTitle.begin(), columnTitle.end());
+        for (char s:columnTitle) {
+            int temp = s - 'A';
+            
+        }
+        return res;
     }
 };
 // @lc code=end
 
 
 int main() {
-    //Solution solution;
-    
+    Solution solution;
+    int s = solution.titleToNumber("BPL");
+    cout << s << endl;
     return 0;
 }
