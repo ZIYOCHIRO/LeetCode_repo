@@ -38,22 +38,18 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    int titleToNumber(string columnTitle) {
-        long long res=0;
-        reverse(columnTitle.begin(), columnTitle.end());
-        for (char s:columnTitle) {
-            int temp = s - 'A';
-            
-        }
-        return res;
+    int countPrimes(int n) {
+        
     }
+    
+    
 };
 // @lc code=end
 
 
 int main() {
     Solution solution;
-    int s = solution.titleToNumber("BPL");
-    cout << s << endl;
+    //int s = solution.hammingWeight(00000000000000000000000010000000); //1
+    //cout << s << endl;
     return 0;
 }
