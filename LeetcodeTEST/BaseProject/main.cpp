@@ -38,8 +38,8 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    bool containsNearbyDuplicate(vector<int>& nums, int k) {
-        return false;
+    int missingNumber(vector<int>& nums) {
+        return 0;
         
     }
 };
@@ -48,8 +48,7 @@ public:
 
 int main() {
     Solution solution;
-    vector<int> nums = {1, 2, 3, 1};
-    //int s = solution.hammingWeight(00000000000000000000000010000000); //1
-    //cout << s << endl;
+    vector<int> nums = {0,1,2,4,5,7};
+
     return 0;
 }
