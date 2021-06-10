@@ -16,7 +16,7 @@
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-                unordered_set<ListNode*>seen;
+        unordered_set<ListNode*>seen;
         while (head != nullptr) {
             if (seen.count(head)) {
                 return true;
