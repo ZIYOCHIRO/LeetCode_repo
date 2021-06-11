@@ -41,27 +41,13 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    /* 超时了
-    int findPoisonedDuration(vector<int>& timeSeries, int duration) {
-        set<int>s;
-        for (int val:timeSeries) {
-            for (int i = 1; i <= duration; i++) {
-                val += 1;
-                s.insert(val);
-            }
+    int arrayPairSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int res = 0;
+        for (int i = 0; i < nums.size(); i+=2) {
+            res += nums[i];
         }
-        return s.size();
-    }
-     */
-    
-    int findPoisonedDuration(vector<int>& timeSeries, int duration) {
-        int n = timeSeries.size();
-        if (n == 0) return 0;
-        int total = 0;
-        for (int i = 0; i<n-1; i++) {
-            total += min(timeSeries[i+1] - timeSeries[i-1], duration);
-        }
-        return total + duration;
+        return res;
     }
 };
 // @lc code=end
@@ -69,9 +55,9 @@ public:
 
 int main() {
     Solution solution;
-    vector<int> nums = {1,2};
-     int s = solution.findPoisonedDuration(nums, 2);
-//    cout << s << endl;
+    vector<int> nums = {1,2,2,5,6,6};
+     int s = solution.arrayPairSum(nums);
+     cout << s << endl;
 //    printVector(nums);
     return 0;
 }
