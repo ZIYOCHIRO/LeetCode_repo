@@ -1,5 +1,7 @@
 
-#include <iostream>
+#include <iostream>     // std::cout
+#include <functional>   // std::minus
+#include <numeric>      // std::accumulate
 #include <vector>
 #include <stack>
 #include <unordered_set>
@@ -41,13 +43,11 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    int arrayPairSum(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
-        int res = 0;
-        for (int i = 0; i < nums.size(); i+=2) {
-            res += nums[i];
-        }
-        return res;
+    vector<vector<int>> imageSmoother(vector<vector<int>>& img) {
+     
+        
+        
+        
     }
 };
 // @lc code=end
@@ -55,9 +55,9 @@ public:
 
 int main() {
     Solution solution;
-    vector<int> nums = {1,2,2,5,6,6};
-     int s = solution.arrayPairSum(nums);
-     cout << s << endl;
-//    printVector(nums);
+    vector<int> nums = {1,12,-5,-6,50,3};
+//    bool s = solution.findMaxAverage(nums, 4);
+//    cout << s << endl;
+    //    printVector(nums);
     return 0;
 }
