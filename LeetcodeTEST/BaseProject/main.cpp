@@ -5,6 +5,7 @@
 #include <vector>
 #include <stack>
 #include <unordered_set>
+#include <unordered_map>
 #include <set>
 using namespace std;
 
@@ -43,14 +44,18 @@ void printVector(vector<int>& v)
 // @lc code=start
 class Solution {
 public:
-    vector<vector<int>> imageSmoother(vector<vector<int>>& img) {
-        int W = img.size();
-        int L = img[0].size();
+    bool isToeplitzMatrix(vector<vector<int>>& matrix) {
+        int R = matrix.size(); // 行
+        int C = matrix[0].size(); // 列
         
-        
-        
-        
-        
+        for (int i = 1; i < R; i++) {
+            for (int j = 1; j < C; j++) {
+                if (matrix[i][j] != matrix[i-1][j-1]) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 };
 // @lc code=end
@@ -58,8 +63,8 @@ public:
 
 int main() {
     Solution solution;
-    vector<int> nums = {1,12,-5,-6,50,3};
-//    bool s = solution.findMaxAverage(nums, 4);
+    vector<int> nums = {0,0,0,1};
+//    int s = solution.dominantIndex(nums);
 //    cout << s << endl;
     //    printVector(nums);
     return 0;
