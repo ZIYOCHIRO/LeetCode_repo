@@ -26,7 +26,6 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-
 void printVector(vector<int>& v)
 {
     cout << "{ ";
@@ -43,35 +42,23 @@ void printVector(vector<int>& v)
 // unorder_set:哈希map
 // @lc code=start
 class Solution {
+    
 public:
-    bool isMonotonic(vector<int>& nums) {
-        unordered_set<int> res;
-        for (int i = 0; i < nums.size() - 1; i++) {
-            if (nums[i+1] -  nums[i] >= 0) {
-                if (res.count(1)) {
-                    
-                } else {
-                    res.insert(1);
-                }
-            } else {
-                if (res.count(-1)) {
-                    
-                } else {
-                    res.insert(-1);
-                }
-            }
-        }
+    vector<int> diStringMatch(string s) {
+        vector<int> res;
+        
         return res;
-    }
+       }
 };
 // @lc code=end
 
 
 int main() {
     Solution solution;
-    vector<int> nums = {1,2};
-    vector<int> nums_1 = {2,3};
-    //vector<int> s = solution.isMonotonic(nums);
+    vector<int> nums = {0,1,2,3,4,5,6,7,8,9};
+    vector<int> nums_1 = {2,1};
+    string str = "IDID";
+    vector<int> s = solution.diStringMatch(str);
     //cout << s << endl;
     printVector(s);
     return 0;
