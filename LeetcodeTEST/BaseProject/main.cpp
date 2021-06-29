@@ -44,11 +44,17 @@ void printVector(vector<int>& v)
 class Solution {
     
 public:
-    vector<int> diStringMatch(string s) {
-        vector<int> res;
-        
-        return res;
-       }
+    bool isSubsequence(string s, string t) {
+        int n = s.length(), m = t.length();
+        int i = 0, j = 0;
+        while (i < n && j < m) {
+            if (s[i] == t[j]) {
+                i++;
+            }
+            j++;
+        }
+        return i == n;
+    }
 };
 // @lc code=end
 
@@ -57,10 +63,11 @@ int main() {
     Solution solution;
     vector<int> nums = {0,1,2,3,4,5,6,7,8,9};
     vector<int> nums_1 = {2,1};
+    vector<char> dd = {'h'};
     string str = "IDID";
-    vector<int> s = solution.diStringMatch(str);
-    //cout << s << endl;
-    printVector(s);
+   // solution.reverseString(dd);//    bool isPalindrome = solution.isPalindrome(str);
+//    cout << isPalindrome << endl;
+    //printVector(s);
     return 0;
 }
 
