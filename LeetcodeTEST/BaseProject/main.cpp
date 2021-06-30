@@ -44,16 +44,19 @@ void printVector(vector<int>& v)
 class Solution {
     
 public:
-    bool isSubsequence(string s, string t) {
-        int n = s.length(), m = t.length();
-        int i = 0, j = 0;
-        while (i < n && j < m) {
-            if (s[i] == t[j]) {
-                i++;
+    int numJewelsInStones(string jewels, string stones) {
+        int jewelCount = 0;
+        int jewelLength = jewels.length();
+        int stoneLength = stones.length();
+        for (int i = 0; i < stoneLength; i++) {
+            for (int j = 0; j < jewelLength; j++) {
+                if (stones[i] == jewels[j]) {
+                    jewelCount++;
+                    break;
+                }
             }
-            j++;
         }
-        return i == n;
+        return jewelCount;
     }
 };
 // @lc code=end
@@ -64,9 +67,9 @@ int main() {
     vector<int> nums = {0,1,2,3,4,5,6,7,8,9};
     vector<int> nums_1 = {2,1};
     vector<char> dd = {'h'};
-    string str = "IDID";
-   // solution.reverseString(dd);//    bool isPalindrome = solution.isPalindrome(str);
-//    cout << isPalindrome << endl;
+    int s = solution.numJewelsInStones("aA", "aAAbbbb");
+    //int s = solution.longestPalindrome(str);//    bool isPalindrome = solution.isPalindrome(str);
+    cout << s << endl;
     //printVector(s);
     return 0;
 }
