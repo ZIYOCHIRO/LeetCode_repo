@@ -44,19 +44,20 @@ void printVector(vector<int>& v)
 class Solution {
     
 public:
-    int numJewelsInStones(string jewels, string stones) {
-        int jewelCount = 0;
-        int jewelLength = jewels.length();
-        int stoneLength = stones.length();
-        for (int i = 0; i < stoneLength; i++) {
-            for (int j = 0; j < jewelLength; j++) {
-                if (stones[i] == jewels[j]) {
-                    jewelCount++;
-                    break;
-                }
-            }
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        unordered_set<int>set1, set2;
+        for (auto & num: nums1) {
+            set1.insert(num);
         }
-        return jewelCount;
+        for (auto & num: nums2) {
+            set2.insert(num);
+        }
+    }
+    
+    vector<int> getIntersection(unordered_set<int>&set1, unordered_set<int>&set2) {
+        
+        vector<int> intersection;
+        
     }
 };
 // @lc code=end
@@ -67,9 +68,9 @@ int main() {
     vector<int> nums = {0,1,2,3,4,5,6,7,8,9};
     vector<int> nums_1 = {2,1};
     vector<char> dd = {'h'};
-    int s = solution.numJewelsInStones("aA", "aAAbbbb");
+    //int s = solution.intersection(, "aAAbbbb");
     //int s = solution.longestPalindrome(str);//    bool isPalindrome = solution.isPalindrome(str);
-    cout << s << endl;
+    //cout << s << endl;
     //printVector(s);
     return 0;
 }
