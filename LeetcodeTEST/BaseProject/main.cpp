@@ -44,29 +44,33 @@ void printVector(vector<int>& v)
 class Solution {
     
 public:
-    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-        unordered_set<int>set1, set2;
-        for (auto & num: nums1) {
-            set1.insert(num);
+    /*
+     将 nn 视作一个长为 3232 的二进制串，从低位往高位枚举 nn 的每一位，将其倒序添加到翻转结果 \textit{rev}rev 中。
+
+     代码实现中，每枚举一位就将 nn 右移一位，这样当前 nn 的最低位就是我们要枚举的比特位。当 nn 为 00 时即可结束循环。
+
+     需要注意的是，在某些语言（如 \texttt{Java}Java）中，没有无符号整数类型，因此对 nn 的右移操作应使用逻辑右移。
+
+     */
+    uint32_t reverseBits(uint32_t n) {
+        uint32_t rev = 0;
+        for (int i = 0; i < 32 && n > 0; ++i) {
+            rev |= (n & 1) << (31-i);
+            n >>= 1;
         }
-        for (auto & num: nums2) {
-            set2.insert(num);
-        }
+        return rev;
     }
-    
-    vector<int> getIntersection(unordered_set<int>&set1, unordered_set<int>&set2) {
-        
-        vector<int> intersection;
-        
-    }
+
 };
 // @lc code=end
 
 
 int main() {
     Solution solution;
-    vector<int> nums = {0,1,2,3,4,5,6,7,8,9};
-    vector<int> nums_1 = {2,1};
+    vector<int> nums = {1,2,2,1};
+    vector<int> nums_1 = {2,2};
+//    vector<int> res = solution.intersection(nums, nums_1);
+//    printVector(res);
     vector<char> dd = {'h'};
     //int s = solution.intersection(, "aAAbbbb");
     //int s = solution.longestPalindrome(str);//    bool isPalindrome = solution.isPalindrome(str);
