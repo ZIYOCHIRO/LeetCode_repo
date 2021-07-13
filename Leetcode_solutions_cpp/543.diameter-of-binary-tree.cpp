@@ -17,9 +17,20 @@
  * };
  */
 class Solution {
+    int ans;
+    int depth(TreeNode *rt) {
+        if (rt == NULL) {
+            return 0;
+        }
+        int L = depth(rt->left);
+        int R = depth(rt->right);
+        ans = max(ans, L + R );
+        return max(L, R) + 1;
+    }
 public:
     int diameterOfBinaryTree(TreeNode* root) {
-        
+        depth(root);
+        return ans;
     }
 };
 // @lc code=end

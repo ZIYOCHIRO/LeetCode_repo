@@ -44,15 +44,8 @@ void printVector(vector<int>& v)
 class Solution {
     
 public:
-    vector<string> fizzBuzz(int n) {
-        vector<string> result;
-        for (int i = 1; i <= n; i++) {
-            if (!(i % 3) && !(i % 5)) result.push_back("FizzBuzz");
-            else if (!(i % 3)) result.push_back("Fizz");
-            else if (!(i % 5)) result.push_back("Buzz");
-            else result.push_back(to_string(i));
-        }
-        return result;
+    TreeNode* mergeTrees(TreeNode* root1, TreeNode* root2) {
+        
     }
 };
 // @lc code=end
@@ -60,10 +53,10 @@ public:
 
 int main() {
     Solution solution;
-    vector<int> nums = {1,2,2,1};
+    vector<int> nums = {4,3,2,7,8,2,3,1};
     vector<int> nums_1 = {2,2};
-//    vector<int> res = solution.intersection(nums, nums_1);
-//    printVector(res);
+//  vector<int> res = solution.findDisappearedNumbers(nums);
+//  printVector(res);
     vector<char> dd = {'h'};
     //int s = solution.intersection(, "aAAbbbb");
     //int s = solution.longestPalindrome(str);//    bool isPalindrome = solution.isPalindrome(str);
