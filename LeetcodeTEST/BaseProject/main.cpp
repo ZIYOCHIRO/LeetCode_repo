@@ -71,6 +71,7 @@ int main() {
     //int s = solution.longestPalindrome(str);//    bool isPalindrome = solution.isPalindrome(str);
     //cout << s << endl;
     //printVector(s);
+    std::string font = "abcd";
     return 0;
 }
 
