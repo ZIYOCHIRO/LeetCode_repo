@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		90E9E87729F3B75E00AEA8A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E87629F3B75E00AEA8A0 /* main.m */; };
+		90E9E88529F3CCAA00AEA8A0 /* ReverseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E88429F3CCAA00AEA8A0 /* ReverseString.m */; };
+		90E9E88B29F3ED2800AEA8A0 /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E88929F3ED2800AEA8A0 /* ReverseList.m */; };
+		90E9E89729F3FCEE00AEA8A0 /* MergeTwoSortedArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E89629F3FCEE00AEA8A0 /* MergeTwoSortedArray.m */; };
+		90E9E89A29F42F0400AEA8A0 /* HashFind.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E89929F42F0400AEA8A0 /* HashFind.m */; };
+		90E9E89D29F44A3A00AEA8A0 /* FindMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E89C29F44A3A00AEA8A0 /* FindMedian.m */; };
+		90E9E8A029F44A4B00AEA8A0 /* FindCommonSuperView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E89F29F44A4B00AEA8A0 /* FindCommonSuperView.m */; };
+		90E9E8A629F50C8A00AEA8A0 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E8A529F50C8A00AEA8A0 /* BubbleSort.m */; };
+		90E9E8A929F5217F00AEA8A0 /* SelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E8A829F5217F00AEA8A0 /* SelectionSort.m */; };
+		90E9E8AC29F52AF200AEA8A0 /* InsertSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E8AB29F52AF200AEA8A0 /* InsertSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,24 @@
 /* Begin PBXFileReference section */
 		90E9E87329F3B75E00AEA8A0 /* BaseProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaseProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E9E87629F3B75E00AEA8A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90E9E88329F3CCAA00AEA8A0 /* ReverseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseString.h; sourceTree = "<group>"; };
+		90E9E88429F3CCAA00AEA8A0 /* ReverseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseString.m; sourceTree = "<group>"; };
+		90E9E88929F3ED2800AEA8A0 /* ReverseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReverseList.m; sourceTree = "<group>"; };
+		90E9E88A29F3ED2800AEA8A0 /* ReverseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseList.h; sourceTree = "<group>"; };
+		90E9E89529F3FCEE00AEA8A0 /* MergeTwoSortedArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeTwoSortedArray.h; sourceTree = "<group>"; };
+		90E9E89629F3FCEE00AEA8A0 /* MergeTwoSortedArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MergeTwoSortedArray.m; sourceTree = "<group>"; };
+		90E9E89829F42F0400AEA8A0 /* HashFind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HashFind.h; sourceTree = "<group>"; };
+		90E9E89929F42F0400AEA8A0 /* HashFind.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HashFind.m; sourceTree = "<group>"; };
+		90E9E89B29F44A3A00AEA8A0 /* FindMedian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindMedian.h; sourceTree = "<group>"; };
+		90E9E89C29F44A3A00AEA8A0 /* FindMedian.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindMedian.m; sourceTree = "<group>"; };
+		90E9E89E29F44A4B00AEA8A0 /* FindCommonSuperView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindCommonSuperView.h; sourceTree = "<group>"; };
+		90E9E89F29F44A4B00AEA8A0 /* FindCommonSuperView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindCommonSuperView.m; sourceTree = "<group>"; };
+		90E9E8A429F50C8A00AEA8A0 /* BubbleSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
+		90E9E8A529F50C8A00AEA8A0 /* BubbleSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
+		90E9E8A729F5217F00AEA8A0 /* SelectionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionSort.h; sourceTree = "<group>"; };
+		90E9E8A829F5217F00AEA8A0 /* SelectionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionSort.m; sourceTree = "<group>"; };
+		90E9E8AA29F52AF200AEA8A0 /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertSort.h; sourceTree = "<group>"; };
+		90E9E8AB29F52AF200AEA8A0 /* InsertSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +84,25 @@
 		90E9E87529F3B75E00AEA8A0 /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				90E9E88A29F3ED2800AEA8A0 /* ReverseList.h */,
+				90E9E88929F3ED2800AEA8A0 /* ReverseList.m */,
+				90E9E88329F3CCAA00AEA8A0 /* ReverseString.h */,
+				90E9E88429F3CCAA00AEA8A0 /* ReverseString.m */,
 				90E9E87629F3B75E00AEA8A0 /* main.m */,
+				90E9E89B29F44A3A00AEA8A0 /* FindMedian.h */,
+				90E9E89C29F44A3A00AEA8A0 /* FindMedian.m */,
+				90E9E8A429F50C8A00AEA8A0 /* BubbleSort.h */,
+				90E9E8A529F50C8A00AEA8A0 /* BubbleSort.m */,
+				90E9E8A729F5217F00AEA8A0 /* SelectionSort.h */,
+				90E9E8A829F5217F00AEA8A0 /* SelectionSort.m */,
+				90E9E8AA29F52AF200AEA8A0 /* InsertSort.h */,
+				90E9E8AB29F52AF200AEA8A0 /* InsertSort.m */,
+				90E9E89E29F44A4B00AEA8A0 /* FindCommonSuperView.h */,
+				90E9E89F29F44A4B00AEA8A0 /* FindCommonSuperView.m */,
+				90E9E89529F3FCEE00AEA8A0 /* MergeTwoSortedArray.h */,
+				90E9E89629F3FCEE00AEA8A0 /* MergeTwoSortedArray.m */,
+				90E9E89829F42F0400AEA8A0 /* HashFind.h */,
+				90E9E89929F42F0400AEA8A0 /* HashFind.m */,
 			);
 			path = BaseProject;
 			sourceTree = "<group>";
@@ -119,7 +164,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E9E8AC29F52AF200AEA8A0 /* InsertSort.m in Sources */,
+				90E9E89A29F42F0400AEA8A0 /* HashFind.m in Sources */,
+				90E9E8A029F44A4B00AEA8A0 /* FindCommonSuperView.m in Sources */,
 				90E9E87729F3B75E00AEA8A0 /* main.m in Sources */,
+				90E9E8A629F50C8A00AEA8A0 /* BubbleSort.m in Sources */,
+				90E9E88529F3CCAA00AEA8A0 /* ReverseString.m in Sources */,
+				90E9E89729F3FCEE00AEA8A0 /* MergeTwoSortedArray.m in Sources */,
+				90E9E8A929F5217F00AEA8A0 /* SelectionSort.m in Sources */,
+				90E9E89D29F44A3A00AEA8A0 /* FindMedian.m in Sources */,
+				90E9E88B29F3ED2800AEA8A0 /* ReverseList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +230,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -228,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -238,11 +292,9 @@
 		90E9E87B29F3B75E00AEA8A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FBBY2SRU5;
 				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_C_LANGUAGE_STANDARD = c11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,11 +302,9 @@
 		90E9E87C29F3B75E00AEA8A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8FBBY2SRU5;
 				ENABLE_HARDENED_RUNTIME = YES;
-				GCC_C_LANGUAGE_STANDARD = c11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -269,7 +319,7 @@
 				90E9E87929F3B75E00AEA8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		90E9E87A29F3B75E00AEA8A0 /* Build configuration list for PBXNativeTarget "BaseProject" */ = {
 			isa = XCConfigurationList;
@@ -278,7 +328,7 @@
 				90E9E87C29F3B75E00AEA8A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
