@@ -33,7 +33,7 @@ struct Node* constructList(void) {
     // 尾节点
     struct Node *cur = NULL;
     
-    for (int i = 1; i <= 10; i++) {
+    for (int i = 1; i <= 4; i++) {
         struct Node *node = malloc(sizeof(struct Node));
         node->data = i;
         

@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Tst.h"
 #import "ReverseString.h"
 #import "ReverseList.h"
 #import "MergeTwoSortedArray.h"
@@ -14,13 +15,18 @@
 #import "BubbleSort.h"
 #import "SelectionSort.h"
 #import "InsertSort.h"
-
-
+#import "RomanNumeral.h"
+#import "TestString.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
         
+        // test
+        [TestString teststr:@""];
+        // 0.test
+        NSString *test =  [Tst test:@"test"];
+        NSLog(@"%@", test);
         
         // 1.字符串反转
         printf("-----1-----\n");
@@ -76,12 +82,21 @@ int main(int argc, const char * argv[]) {
         }
         
         // 8.插入排序
-        printf("------7------\n");
+        printf("------8------\n");
         int arrInsert[] = {3,1,7,2,4,6,5};
         insertSort(arrInsert, 7);
         for (int i = 0; i < 7; i++) {
             printf("%d \n", arrInsert[i]);
         }
+        
+        
+        // 9.罗马转数字
+        printf("------8------\n");
+        //char str[] = "MCMLIV";// 1954
+        //char str[] = "MCMXC"; //1990
+        char str[] = "MMXIV"; //2014
+        int number = romanNumeralsToNumber(str);
+        printf("%d \n", number);
     }
     return 0;
 }
