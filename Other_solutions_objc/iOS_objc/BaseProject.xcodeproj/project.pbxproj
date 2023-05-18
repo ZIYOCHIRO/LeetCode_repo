@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902ACFD62A14ABC300FB206C /* FindSum.m in Sources */ = {isa = PBXBuildFile; fileRef = 902ACFD52A14ABC300FB206C /* FindSum.m */; };
 		902E34EA29F68D2000BEDC4F /* RomanNumeral.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E34E929F68D2000BEDC4F /* RomanNumeral.m */; };
-		902E34ED29F7C3DC00BEDC4F /* Tst.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E34EC29F7C3DC00BEDC4F /* Tst.m */; };
-		902E34F029F7EEFC00BEDC4F /* TestString.m in Sources */ = {isa = PBXBuildFile; fileRef = 902E34EF29F7EEFC00BEDC4F /* TestString.m */; };
+		9096B8102A0E964A00D40420 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 9096B80F2A0E964A00D40420 /* test.m */; };
 		90E9E87729F3B75E00AEA8A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E87629F3B75E00AEA8A0 /* main.m */; };
 		90E9E88529F3CCAA00AEA8A0 /* ReverseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E88429F3CCAA00AEA8A0 /* ReverseString.m */; };
 		90E9E88B29F3ED2800AEA8A0 /* ReverseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 90E9E88929F3ED2800AEA8A0 /* ReverseList.m */; };
@@ -35,12 +35,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		902ACFD42A14ABC300FB206C /* FindSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindSum.h; sourceTree = "<group>"; };
+		902ACFD52A14ABC300FB206C /* FindSum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindSum.m; sourceTree = "<group>"; };
 		902E34E829F68D2000BEDC4F /* RomanNumeral.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RomanNumeral.h; sourceTree = "<group>"; };
 		902E34E929F68D2000BEDC4F /* RomanNumeral.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomanNumeral.m; sourceTree = "<group>"; };
-		902E34EB29F7C3DC00BEDC4F /* Tst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tst.h; sourceTree = "<group>"; };
-		902E34EC29F7C3DC00BEDC4F /* Tst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tst.m; sourceTree = "<group>"; };
-		902E34EE29F7EEFC00BEDC4F /* TestString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestString.h; sourceTree = "<group>"; };
-		902E34EF29F7EEFC00BEDC4F /* TestString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestString.m; sourceTree = "<group>"; };
+		9096B80E2A0E964A00D40420 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		9096B80F2A0E964A00D40420 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		90E9E87329F3B75E00AEA8A0 /* BaseProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BaseProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E9E87629F3B75E00AEA8A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		90E9E88329F3CCAA00AEA8A0 /* ReverseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverseString.h; sourceTree = "<group>"; };
@@ -77,8 +77,8 @@
 		90E9E86A29F3B75E00AEA8A0 = {
 			isa = PBXGroup;
 			children = (
-				902E34EE29F7EEFC00BEDC4F /* TestString.h */,
-				902E34EF29F7EEFC00BEDC4F /* TestString.m */,
+				902ACFD42A14ABC300FB206C /* FindSum.h */,
+				902ACFD52A14ABC300FB206C /* FindSum.m */,
 				90E9E87529F3B75E00AEA8A0 /* BaseProject */,
 				90E9E87429F3B75E00AEA8A0 /* Products */,
 			);
@@ -97,8 +97,6 @@
 			children = (
 				90E9E88A29F3ED2800AEA8A0 /* ReverseList.h */,
 				90E9E88929F3ED2800AEA8A0 /* ReverseList.m */,
-				902E34EB29F7C3DC00BEDC4F /* Tst.h */,
-				902E34EC29F7C3DC00BEDC4F /* Tst.m */,
 				90E9E88329F3CCAA00AEA8A0 /* ReverseString.h */,
 				90E9E88429F3CCAA00AEA8A0 /* ReverseString.m */,
 				90E9E87629F3B75E00AEA8A0 /* main.m */,
@@ -106,6 +104,8 @@
 				90E9E89C29F44A3A00AEA8A0 /* FindMedian.m */,
 				90E9E8A429F50C8A00AEA8A0 /* BubbleSort.h */,
 				90E9E8A529F50C8A00AEA8A0 /* BubbleSort.m */,
+				9096B80E2A0E964A00D40420 /* test.h */,
+				9096B80F2A0E964A00D40420 /* test.m */,
 				90E9E8A729F5217F00AEA8A0 /* SelectionSort.h */,
 				90E9E8A829F5217F00AEA8A0 /* SelectionSort.m */,
 				90E9E8AA29F52AF200AEA8A0 /* InsertSort.h */,
@@ -182,12 +182,12 @@
 				90E9E8AC29F52AF200AEA8A0 /* InsertSort.m in Sources */,
 				90E9E89A29F42F0400AEA8A0 /* HashFind.m in Sources */,
 				90E9E8A029F44A4B00AEA8A0 /* FindCommonSuperView.m in Sources */,
-				902E34ED29F7C3DC00BEDC4F /* Tst.m in Sources */,
 				90E9E87729F3B75E00AEA8A0 /* main.m in Sources */,
-				902E34F029F7EEFC00BEDC4F /* TestString.m in Sources */,
 				90E9E8A629F50C8A00AEA8A0 /* BubbleSort.m in Sources */,
+				9096B8102A0E964A00D40420 /* test.m in Sources */,
 				90E9E88529F3CCAA00AEA8A0 /* ReverseString.m in Sources */,
 				90E9E89729F3FCEE00AEA8A0 /* MergeTwoSortedArray.m in Sources */,
+				902ACFD62A14ABC300FB206C /* FindSum.m in Sources */,
 				90E9E8A929F5217F00AEA8A0 /* SelectionSort.m in Sources */,
 				902E34EA29F68D2000BEDC4F /* RomanNumeral.m in Sources */,
 				90E9E89D29F44A3A00AEA8A0 /* FindMedian.m in Sources */,

@@ -1,16 +1,16 @@
 //
-//  Tst.h
+//  test.h
 //  BaseProject
 //
-//  Created by RuiSalli on 25/4/2023.
+//  Created by Rui Saoirse on 12/5/2023.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Tst : NSObject
-+ (NSString *)test:(NSString *)testStr;
+@interface test : NSObject
+
 @end
 
 NS_ASSUME_NONNULL_END

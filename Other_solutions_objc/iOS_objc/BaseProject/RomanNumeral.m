@@ -64,4 +64,62 @@ int romanNumeralsToNumber(char str[]) {
 }
 
 
++(int)romanNumeralsToNumber:(NSString *)str {
+    // MCMLIV to array
+    NSMutableArray *strArray = [NSMutableArray array];
+    [str enumerateSubstringsInRange:NSMakeRange(0, str.length) options:NSStringEnumerationByComposedCharacterSequences usingBlock:^(NSString * _Nullable substring, NSRange substringRange, NSRange enclosingRange, BOOL * _Nonnull stop) {
+            [strArray addObject:substring];
+    }];
+    int L = 0;
+    int R = strArray.count - 1;
+    
+    return [RomanNumeral romanNumeralsToNumber:strArray leftInex:L rightIndex:R];
+}
+
++(int)romanNumeralsToNumber:(NSArray *)strArray leftInex:(int)L rightIndex:(int)R {
+    if (L == R) {
+        return [RomanNumeral romanSymbolToNumber:strArray[L]];;
+    } else if (L > R) {
+        return 0;
+    } else {
+        // Find the max
+        int maxIndex = [RomanNumeral findTheMaxIndex:strArray leftIndex:L rightIndex:R];
+        int maxNumber = [RomanNumeral romanSymbolToNumber:strArray[maxIndex]];
+        // max - leftPart + rightPart
+        int leftPartNumber = [RomanNumeral romanNumeralsToNumber:strArray leftInex:L rightIndex:maxIndex - 1];
+        int rightPartNumber = [RomanNumeral romanNumeralsToNumber:strArray leftInex:maxIndex + 1 rightIndex:R];
+        return  maxNumber - leftPartNumber + rightPartNumber;
+    }
+    
+}
+
++ (int)romanSymbolToNumber:(NSString *)symbol {
+    NSDictionary *romanDic = @{@"I":@1,
+                               @"V":@5,
+                               @"X":@10,
+                               @"L":@50,
+                               @"C":@100,
+                               @"D":@500,
+                               @"M":@1000,
+                               
+    };
+    if (romanDic[symbol] != nil) {
+        return [romanDic[symbol] intValue];
+    }
+    return 0;
+}
+
++ (int)findTheMaxIndex:(NSArray *)strArray leftIndex:(int)L rightIndex:(int)R {
+    int maxNumber = [RomanNumeral romanSymbolToNumber:strArray[L]];
+    int maxIndex = L;
+    for (int i = L+1; i <= R; i++) {
+        int nextNumber = [RomanNumeral romanSymbolToNumber:strArray[i]];
+        if (nextNumber > maxNumber) {
+            maxNumber = nextNumber;
+            maxIndex = i;
+        }
+    }
+    return maxIndex;
+}
+
 @end

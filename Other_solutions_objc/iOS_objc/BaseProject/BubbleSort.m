@@ -33,4 +33,21 @@ void bubbleSort(int a[], int aLen) {
         bubble(a, i);
     }
 }
+
++(NSArray *)bubbleSort:(NSArray *)array {
+    NSMutableArray *resultArray = [NSMutableArray arrayWithArray:array];
+    for (int i = array.count; i >= 1; i--) {
+        for (int j = 0; j < i-1; j++) {
+            if ([resultArray[j] intValue] > [resultArray[j+1] intValue]) {
+                int temp = [resultArray[j] intValue];
+                resultArray[j] = resultArray[j+1];
+                resultArray[j+1] = [NSNumber numberWithInt:temp];
+            }
+        }
+    }
+    
+    return resultArray;
+}
+
+
 @end

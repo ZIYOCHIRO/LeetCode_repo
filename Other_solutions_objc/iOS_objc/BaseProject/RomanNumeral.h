@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RomanNumeral : NSObject
 // 罗马转十进制数字
 int romanNumeralsToNumber(char str[]);
+
++(int)romanNumeralsToNumber:(NSString *)str;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,16 +8,28 @@
 #import "ReverseString.h"
 
 @implementation ReverseString
-void char_reverse(char *str) {
-    char* begin = str; // 指向第一个字符
-    char* end = str + strlen(str) - 1; // 指向最后一个字符
-    while (begin < end) {
-        // 交换begin和end的字符，同时移动指针
-        char temp = *begin;
-        *begin = *end;
-        *end = temp;
-        begin++; // begin指针往后移动一位
-        end--; // end指针往前移动一位
+void char_reverse(char str[]) {
+    int strLength = strlen(str);
+    int i = 0;
+    int j = strLength - 1;
+    while (i <= j) {
+        //交换i 和 j的值，同时向中间移动
+        char temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+        i++;
+        j--;
     }
+}
+
+
++(NSString *)reverseString:(NSString *)str {
+    NSString *result = @"";
+    for (NSInteger i = str.length - 1; i >= 0; i--) {
+        NSString *currentStr = [str substringWithRange:NSMakeRange(i, 1)];
+        result = [result stringByAppendingString:currentStr];
+    }
+    
+    return result;
 }
 @end
